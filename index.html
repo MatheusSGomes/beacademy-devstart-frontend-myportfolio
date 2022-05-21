@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700;800;900&family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/pattern.css">
+  <link rel="stylesheet" href="./assets/css/menu.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <title>Meu Portfólio</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="./assets/images/logo-matheus.svg" />
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="#sobre" class="menu-item">QUEM SOU</a></li>
+          <li><a href="#projetos" class="menu-item">PROJETOS</a></li>
+        </ul>
+
+        <!-- <a href="#contato" class="botao-primario">
+          <span>PEÇA UM ORÇAMENTO</span>
+        </a> -->
+
+        <ul class="menu-social">
+          <li><a href="https://github.com/MatheusSGomes" target="_blank"><img src="./assets/images/icon-instagram.svg"></a></li>
+          <li><a href="https://www.linkedin.com/in/dev-matheus-gomes" target="_blank"><img src="./assets/images/icon-linkedin.svg"></a></li>
+        </ul>
+        <!-- BOTÃO MENU RESPONSIVO -->
+      </nav>
+      <!-- BOTÃO MENU RESPONSIVO -->
+
+    </div><!-- CONTAINER-->
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-layer">
+        <div class="container">
+          <div class="titulo">
+            <h1>Olá! Eu sou Matheus Gomes</h1>
+            <h2>Especialista em Desenvolvimento Web</h2>
+            <p>Apaixonado por desenvolvimento web e mobile. Focado em construir aplicações escaláveis de forma ágil usando práticas de código limpo, padronizado e estruturado. </p>
+          
+  
+            <div class="tecnologias">
+              <img src="./assets/images/icon-html.svg" alt="HTML">
+              <img src="./assets/images/icon-css.svg" alt="CSS">
+              <img src="./assets/images/icon-javascript.svg" alt="JavaScript">
+              <img src="./assets/images/icon-php.svg" alt="PHP">
+            </div>
+  
+            <a href="#projetos" class="botao-primario">Veja meus projetos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="sucesso">
+      <div class="container">
+        <div class="titulo__sucesso">
+          <h2>Sucesso Tem Nome</h2>
+        </div>
+
+        <div class="card__sucesso"></div>
+      </div>
+    </section> -->
+
+    <section class="sobre" id="sobre">
+      <div class="container">
+        <div class="sobre-descricao">
+          <h2>QUEM SOU<span>.</span></h2>
+          
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti quae saepe, pariatur incidunt perferendis esse quas, dolorem atque repellendus fuga odit eius asperiores neque temporibus placeat ducimus, qui dolor!</p>
+
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/dev-matheus-gomes"><img src="./assets/images/icon-linkedin.svg" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/images/icon-instagram.svg" alt=""></a>
+            </li>
+            <li>
+              <a href="https://github.com/MatheusSGomes"><img src="./assets/images/icon-github.svg" alt=""></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sobre-imagem">
+          <img src="./assets/images/foto-matheus.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="projetos" id="projetos">
+      <div class="container">
+        <div class="titulo-projetos">
+          <h2>PROJETOS<span style="color: #c1c1c1;">.</span></h2>
+        </div>
+        
+        <div class="todos-projetos">
+          <div class="projeto">
+            <img src="./assets/images/projetos-1.png" alt="Projeto 1">
+          </div>
+
+          <div class="projeto">
+            <img src="./assets/images/projetos-1.png" alt="Projeto 2">
+          </div>
+
+          <div class="projeto">
+            <img src="./assets/images/projetos-1.png" alt="Projeto 3">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contato" id="contato">
+      <div class="container">
+        <div class="contato-titulo">
+          <h2>Entre em Contato<span>.</span></h2>
+        </div>
+
+        <div class="contato-formulario">
+          <form action="">
+            <input placeholder="Preencha seu nome" type="text" required />
+            <input placeholder="Preencha seu nome" type="text" required />
+            <textarea placeholder="Deixe sua mensagem" rows="5"></textarea>
+            <button class="btn-primary" type="submit">ENVIAR</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="copy">
+        <p>Desenvolvido por Matheus Gomes</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

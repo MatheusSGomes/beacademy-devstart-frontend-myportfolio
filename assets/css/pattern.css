@@ -1,0 +1,73 @@
+/* 
+  azul-escuro #0511F2
+  azul-medio #215AFF
+  azul-claro #6B98F2
+  branco #F2F2F2
+  preto #0D0D0D
+
+*/
+
+:root {
+  --primary-color: #215AFF;
+  --second-color: #6B98F2;
+  --black-color: #000000;
+  --black-color-medium: #0D0D0D;
+  --semi-black: #1e1e1e;
+  --white-color: #ffffff;
+  --white-medium: #d9d9d9;
+  --white-dark: #c1c1c1;
+}
+
+.container {
+  width: 100%;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 0 rem 1.5rem;
+}
+
+h1, h2, h3, h4, h5, p, span {
+  color: var(--second-color);
+}
+
+h2 {
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+
+h2 span {
+  color: var(--white-color);
+}
+
+.botao-primario {
+  /* font-size: 1.6rem; */
+  border-radius: 24px;
+  font-weight: 700;
+  line-height: 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: .8rem 1.2rem;
+  border-radius: 50px;
+  transition: all 0.2s;
+}
+
+/* Padrões do formulário */
+input[type="text"],
+textarea {
+  background-color: var(--white-dark);
+  border: 1px solid var(--white-dark);
+  border-radius: 0.4rem;
+  width: 100%;
+  padding: 2rem;
+  resize: none;
+  color: var(--semi-black);
+  outline: none;
+  transition: all 0.4s;
+}
+
+input[type="text"]:hover,
+textarea:hover {
+  border: 1px solid var(--primary-color);
+}

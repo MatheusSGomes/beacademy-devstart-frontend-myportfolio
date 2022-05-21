@@ -1,0 +1,289 @@
+body {
+  background-color: var(--black-color);
+}
+
+* {
+  /* border: 1px solid red; */
+}
+
+/* MENU */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 4rem 0px;
+  z-index: 1001;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu li {
+  margin-right: 4.8rem;
+}
+
+.menu-item {
+  color: var(--second-color);
+  font-weight: 700;
+}
+
+.menu-social {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-left: 4rem;
+  gap: 3.4rem;
+}
+
+.menu-social img {
+  transition: all 0.2s;
+}
+
+.menu-social img:hover {
+  filter: brightness(90%);
+  transform: translateY(-5%);
+}
+
+/* HEADER */
+.hero {
+  background-image: url("../images/background-hero-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero-layer {
+  background-color: rgba(255, 255, 255, .85);
+}
+
+/* SECTION - HERO */
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* max-width: 59.2rem; */
+  padding-top: 16rem;
+  padding-bottom: 7rem;
+  /* padding-bottom: 6rem; */
+}
+
+.titulo h1 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 7.7rem;
+  text-align: center;
+  color: var(--black-color);
+}
+
+.titulo h1 span {
+  color: var(--primary-color);
+}
+
+.titulo h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.6rem;
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 3.2rem;
+}
+
+.titulo p {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2.7rem;
+  text-align: center;
+  color: var(--second-color);
+}
+
+.titulo a.botao-primario {
+  margin-top: 2rem;
+  padding: .9rem 2rem;
+}
+
+.tecnologias {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+  margin-top: 2.3rem;
+}
+
+
+
+/* SECTION - SUCESSO */
+
+/* SECTION - SOBRE */
+.sobre {
+  background-color: var(--white-medium);
+  padding: 6rem 0;
+}
+
+.sobre .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sobre-descricao {
+  width: 100%;
+  max-width: 71rem;
+}
+
+.sobre-descricao p {
+  font-weight: 400;
+  line-height: 2rem;
+  font-size: 1rem;
+  color: var(--semi-black);
+  margin-top: 2.4rem;
+}
+
+.sobre-descricao ul {
+  display: flex;
+  gap: 1.6rem;
+  margin-top: 3.2rem;
+}
+
+.sobre-descricao ul li a img {
+  transition: all 0.2s;
+}
+
+.sobre-descricao ul li a img:hover {
+  transform: translateY(-12%);
+  filter: brightness(80%);
+}
+
+.sobre-imagem {
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sobre-imagem img {
+  width: 300px;
+}
+
+/* SECTION - PROJETOS */
+.projetos {
+  background-color: var(--white-color);
+  padding: 4.5rem 0;
+  padding-bottom: 8rem;
+}
+
+.projetos .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-projetos {
+  margin-bottom: 7.3rem;
+} 
+
+.todos-projetos {
+  display: flex;
+  width: 100%;
+  gap: 1.4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.todos-projetos:nth-child(2) {
+  margin-top: -1.2rem;
+}
+
+.todos-projetos img {
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.todos-projetos img:hover {
+  transform: translateY(-2%);
+}
+
+/* SECTION - FORMULÁRIO - CONTATOS */
+.contato {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  background-color: var(--white-medium);
+}
+
+.contato .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contato-titulo h2 {
+  margin-bottom: 2.4rem;
+}
+
+.contato-formulario form {
+  width: 100%;
+  max-width: 48.6rem;
+}
+
+.contato-formulario input[type=text], 
+.contato-formulario textarea,
+.contato-formulario button {
+  display: block;
+}
+
+.contato-formulario input[type=text] {
+  margin-bottom: 3.1rem;
+}
+
+.contato-formulario textarea {
+  margin-bottom: 0;
+}
+
+.contato-formulario button {
+  border-radius: 2.4rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 1rem 2.4rem;
+  border: none;
+  margin-top: 1.7rem;
+  font-weight: 700;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--white-dark);
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy {
+  padding: 4rem 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2.4rem;
+}
