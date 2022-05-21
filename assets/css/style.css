@@ -282,8 +282,11 @@ footer .container {
 
 .copy {
   padding: 4rem 0;
-  color: rgba(255, 255, 255, 0.8);
   font-weight: 400;
   font-size: 1rem;
   line-height: 2.4rem;
+}
+
+.copy p {
+  color: var(--white-color);
 }
